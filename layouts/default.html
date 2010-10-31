@@ -1,27 +1,51 @@
-<!DOCTYPE HTML>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>A Brand New nanoc Site - <%= @item[:title] %></title>
-    <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
-    <meta name="generator" content="nanoc 3.1.5">
-  </head>
-  <body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+<title>jason petsod - <%= @item[:title] %></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- Blueprint CSS -->
+<link rel="stylesheet" href="/css/blueprint/screen.css" media="screen, projection" />
+<link rel="stylesheet" href="/css/blueprint/print.css" media="print" />
+<!--[if IE]>
+<link rel="stylesheet" href="/css/blueprint/ie.css" media="screen, projection" />
+<![endif]-->
+
+<link rel="stylesheet" href="/css/main.css" media="screen, projection" />
+<link rel="stylesheet" href="/css/layout.css" media="screen, projection" />
+</head>
+
+<body>
+
+<div class="container">
+<div id="col1">
+    <div id="header">
+        <h1><a href="/">jason petsod</a></h1>
+    </div>
+
+    <ul id="leftnav">
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/projects/">Projects</a></li>
+        <li><a href="/about/">About</a></li>
+    </ul>
+</div>
+
+<div id="col2">
     <div id="main">
-      <%= yield %>
+        <%= yield %>
     </div>
-    <div id="sidebar">
-      <h2>Documentation</h2>
-      <ul>
-        <li><a href="http://nanoc.stoneship.org/docs/">Documentation</a></li>
-        <li><a href="http://nanoc.stoneship.org/docs/3-getting-started/">Getting Started</a></li>
-      </ul>
-      <h2>Community</h2>
-      <ul>
-        <li><a href="http://groups.google.com/group/nanoc/">Discussion Group</a></li>
-        <li><a href="irc://chat.freenode.net/#nanoc">IRC Channel</a></li>
-        <li><a href="http://projects.stoneship.org/trac/nanoc/">Wiki</a></li>
-      </ul>
+
+    <div id="footer">
+        <ul>
+            <li>&copy; 2010&ndash;present Jason Petsod</li>
+            <li><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">cc-by-sa</a></li>
+        </ul>
     </div>
-  </body>
+</div>
+</div>
+
+</body>
+
 </html>
