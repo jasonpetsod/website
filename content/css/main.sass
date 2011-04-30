@@ -35,17 +35,21 @@
     text-align: justify
     background: #fff
 
-    h2, h3
+    h2, h3, h4
         border-left: 5px solid
         padding-left: 0.25em
         font-weight: bold
         text-transform: lowercase
+        text-align: left
 
     h2
         border-left-color: adjust-hue(lighten($c_link, 25%), 135deg)
 
     h3
         border-left-color: adjust-hue(lighten($c_link, 25%), -135deg)
+
+    h4
+        border-left-color: adjust-hue(lighten($c_link, 37.5%), 15deg)
 
 #footer
     text-align: center
@@ -70,6 +74,9 @@ h2
 
 h3
     font-size: 1.5em
+
+h4
+    font-size: 1.25em
 
 a
     text-decoration: none
@@ -139,4 +146,4 @@ dl.recipe-info
     dt
         float: left
     dd
-        margin-left: 6em
+        margin-left: 7em
