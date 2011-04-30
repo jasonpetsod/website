@@ -4,6 +4,12 @@ title: recipes
 
 ## Recipes
 
+<ul>
+<% items_with_tag('recipes').sort_by { |item| item[:title] }.each do |item| %>
+<li><a href="<%= item.identifier %>"><%= item[:title] %></a></li>
+<% end %>
+</ul>
+
 ### See also
 
  * [Pinboard: bookmarks tagged 'recipes'](http://pinboard.in/u:jasonpetsod/t:recipes)

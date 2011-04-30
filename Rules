@@ -22,6 +22,15 @@ compile '/css/*/' do
     filter :sass
 end
 
+# compilation rules for individual recipes; don't include the recipes index
+# page
+compile '/recipes/(?!index)+' do
+    layout 'recipe'
+    filter :erb
+    filter :kramdown
+    layout 'default'
+end
+
 compile '*' do
   filter :erb
   filter :kramdown

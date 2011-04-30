@@ -1,0 +1,19 @@
+## <%= item[:title] %>
+
+<dl class="recipe-info">
+    <dt>Serves</dt>
+    <dd><%= item[:serves] %></dd>
+
+    <dt>Active Time</dt>
+    <dd><%= item[:active_time] %></dd>
+
+    <dt>Total Time</dt>
+    <dd><%= item[:total_time] %></dd>
+
+<% if item[:source] %>
+    <dt>Source</dt>
+    <dd><%= item[:source] %></dd>
+<% end %>
+</dl>
+
+<%= yield %>
