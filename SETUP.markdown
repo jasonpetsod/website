@@ -14,7 +14,7 @@ are taken to isolate it.
 
 Set these environment variables to your liking:
 
-        NANOC_ENV=  # path to isolated environment; dir should not exist yet
+    NANOC_ENV=  # path to isolated environment; dir should not exist yet
 
 ## Instructions
 
@@ -50,8 +50,8 @@ Set these environment variables to your liking:
 
 To enter the environment, run:
 
-        . ${NANOC_ENV?}/bin/activate_sandbox
+    . ${NANOC_ENV?}/bin/activate_sandbox
 
 To leave the environment, run:
 
-        deactivate_sandbox
+    deactivate_sandbox
