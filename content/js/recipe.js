@@ -19,7 +19,7 @@ function populate_revision_history() {
                     'url': 'https://github.com' + commit.url,
                     'date': commit.committed_date,
                     'description': commit.message,
-                }).prependTo(list);
+                }).appendTo(list);
             });
             $('#revision-history').html(list);
         },
