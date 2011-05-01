@@ -24,3 +24,19 @@
 </dl>
 
 <%= yield %>
+
+<h3>Revision History</h3>
+
+<script id="revision-template" type="text/x-jquery-tmpl">
+<dt><a href="${url}">${date}</a></dt>
+<dd>${description}</dd>
+</script>
+
+<div id="revision-history">
+Loading revision history...
+<noscript>
+In-page revision history requires JavaScript. Please see the <a
+href="https://github.com/jasonpetsod/website/">Github Repository</a>
+instead.
+</noscript>
+</div>
