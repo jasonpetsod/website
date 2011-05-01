@@ -31,12 +31,14 @@ preprocess do
     items.each do |item|
         # set default attributes
         item.attributes = {
+            :scripts => [],
             :stylesheets => [],
             :tags => [],
         }.merge(item.attributes)
 
         # FIXME: change recipe tag from 'recipes' to 'recipe'
         if item[:tags].include? 'recipes' then
+            item[:scripts].concat [:jquery, 'jquery-tmpl.js', 'recipe.js']
             item[:stylesheets] << 'recipe'
         end
     end
