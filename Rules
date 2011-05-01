@@ -22,6 +22,11 @@ compile '/css/*/' do
     filter :sass
 end
 
+# don't compile scripts
+compile '/js/*/' do
+    nil
+end
+
 preprocess do
     items.each do |item|
         # set default attributes
@@ -58,6 +63,11 @@ end
 
 route '/css/*/' do
     item.identifier.chop + '.css'
+end
+
+# don't mangle scripts
+route '/js/*/' do
+    item.identifier.chop + '.js'
 end
 
 route '*' do
