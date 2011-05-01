@@ -30,4 +30,5 @@ or
 
 ## See also
 
-[nanoc documentation](http://nanoc.stoneship.org/docs/)
+ * [nanoc documentation](http://nanoc.stoneship.org/docs/)
+ * [kramdown syntax](http://kramdown.rubyforge.org/syntax.html)
